@@ -1,0 +1,3 @@
+// test file containing no requests
+// reason: to test program's response to empty file
+// expected result: no output

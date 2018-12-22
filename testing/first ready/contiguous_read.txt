@@ -1,0 +1,7 @@
+// Verify reads from contiguous locations meet timing requirements
+// Reads from different banks in same bank group
+// expected result: should meet tRRD_L requirement of 6 clock cycles
+30 READ 0x026A83080
+31 READ 0x026A83180
+32 READ 0x026A83280
+33 READ 0x026A83380

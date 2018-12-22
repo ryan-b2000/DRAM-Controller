@@ -1,0 +1,12 @@
+// when queue is completely empty, does it reload correctly?
+// this set will partially load queue, give it time to empty, 
+// then reload queue.
+// expected result: first 3 requests should be processed, then 
+// queue should empty, then requests 4-6 should load into queue.
+
+30 READ 0x0357A9580
+31 WRITE 0x033087100
+32 READ 0x16BA86740
+300 WRITE 0x02450D340
+301 READ 0x16EC97280
+302 WRITE 0x026A83300

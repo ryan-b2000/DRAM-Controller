@@ -1,0 +1,15 @@
+// test pattern for input - spaces vs tabs
+// reason: to verify program can handle inputs separated by either spaces or tabs
+// expected result: program should accept inputs & process requests normally
+30 READ 0x0000206D8
+31	READ	0x000020758
+32 READ 0x000020798
+33	WRITE	0x0000207D8
+34 READ 0x000020D58
+35 READ 0x000020D98
+50	WRITE	0x000020DD8
+51	READ	0x000020E58
+60 WRITE 0x000020E98
+61	WRITE	0x000020ED8			
+62	READ 0x000020F58
+63 WRITE	0x000020F98

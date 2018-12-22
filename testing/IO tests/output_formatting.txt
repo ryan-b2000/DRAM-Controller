@@ -1,0 +1,16 @@
+// file to test output formatting
+// reason: verify that requests are processed & formatted correctly
+//expected result: (NOTE: please check me on this. Numbers are correct, but is PRE, ACT needed each time?)
+// XXX PRE 2 1
+// XXX ACT 2 1 16D
+// XXX RD 2 1 61
+// XXX PRE 1 3
+// XXX ACT 1 3 2108
+// XXX WR 1 3 40
+// XXX PRE 2 2
+// XXX ACT 2 2 F858
+// XXX REF
+
+30 READ 0x002DB8580
+32 WRITE 0x042110340
+34 IFETCH 0x1F0B1E288			

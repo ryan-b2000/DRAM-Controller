@@ -1,0 +1,4 @@
+// test file containing only one request
+// reason: to test program's response to file with only one request
+// expected result: program should accept input & process request normally
+30 READ 0x000028A48

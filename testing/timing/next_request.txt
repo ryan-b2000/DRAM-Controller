@@ -1,0 +1,24 @@
+// test to verify whether a next request waits when queue is full
+// & is then added when space clears.
+// expected result: 17th request should be delayed, then added to queue
+// on next clock cycle after space clears.
+// subsequent requests should behave the same.
+30 READ 0x000020540
+31 WRITE 0x000020580
+32 READ 0x0000205C0
+33 READ 0x000020600
+34 READ 0x000020640			
+35 IFETCH 0x000020680
+36 WRITE 0x0000206C0
+37 READ 0x000020700
+38 WRITE 0x000020740			
+39 WRITE 0x000020780
+40 IFETCH 0x0000207C0
+41 READ 0x000020800
+42 READ 0x000020840
+43 READ 0x000020880			
+44 READ 0x0000A1680
+45 IFETCH 0x0000A16C0
+46 WRITE 0x0000A1700
+47 READ 0x021D16F00
+48 WRITE 0x0357A9580

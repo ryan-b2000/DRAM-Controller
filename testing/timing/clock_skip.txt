@@ -1,0 +1,7 @@
+// file to test program clock skip
+// queue will have time to empty between 2nd & 3rd request
+// clock should skip ahead to time of 3rd request
+
+30 READ 0x0415B5440
+31 READ 0x04D14D2C0
+250 READ 0x000076880
